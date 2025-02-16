@@ -339,7 +339,21 @@ def update(sno):
 #74 pip install gunicorn (multiple threads e application serve kora jabe)
 #75 pip freeze > requirements.txt (inside requirements.txt file all the project requirements will be there)
 #76 Now create Procfile (Heroku use procfile deploy the application)
-#77 web:gunicorn app:app (write this command inside the Procfile, this command is telling to execute the app.py file) 
+#77 web: gunicorn app:app (write this command inside the Procfile, this command is telling to execute the app.py file) 
+
+#78 after installing heroku cli for windows 
+# use heroku command in terminal
+# then write heroku login
+# git init
+# git add .
+# git commit -m "project init"
+# heroku create todo-aman
+
+
+#79 this command is used to see the github witch is used for this repo
+# git remote -v
+# origin  https://github.com/SheikhAman/python_flask_2023_harry.git (fetch)
+# origin  https://github.com/SheikhAman/python_flask_2023_harry.git (push)  
 
 
 
@@ -348,13 +362,13 @@ def update(sno):
 
 
 
-# we can also make js file in static folder
+#80 we can also make js file in static folder
 # this script is written in base.html from there we are calling the js file witch in inside the static folder/js folder
 # <script src="{{ url_for('static', filename='js/test.js') }}"></script>
 
-# we can use jurl for jinja url shortcut from our extension
+#81 we can use jurl for jinja url shortcut from our extension
 
 
-# we also made css file in static folder and it has been called from base.html file
+#88 we also made css file in static folder and it has been called from base.html file
 # <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
 # also made the style.css file in css folder witch is inside static folder
