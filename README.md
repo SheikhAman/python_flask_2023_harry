@@ -330,3 +330,31 @@ def update(sno):
     
     todo = Todo.query.filter_by(sno=sno).first()
     return render_template("update.html",todo = todo) -->
+
+
+#73 we will use heroku to serve our website
+# and we will download heroku cli to make things easy
+# making it ready for heorku website serve all the commands down here
+
+#74 pip install gunicorn (multiple threads e application serve kora jabe)
+#75 pip freeze > requirements.txt (inside requirements.txt file all the project requirements will be there)
+#76 Now create Procfile (Heroku use procfile deploy the application)
+#77 web:gunicorn app:app (write this command inside the Procfile, this command is telling to execute the app.py file) 
+
+
+
+
+
+
+
+
+# we can also make js file in static folder
+# this script is written in base.html from there we are calling the js file witch in inside the static folder/js folder
+# <script src="{{ url_for('static', filename='js/test.js') }}"></script>
+
+# we can use jurl for jinja url shortcut from our extension
+
+
+# we also made css file in static folder and it has been called from base.html file
+# <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
+# also made the style.css file in css folder witch is inside static folder
